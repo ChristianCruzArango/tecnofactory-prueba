@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #B71C1C, #212121);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}

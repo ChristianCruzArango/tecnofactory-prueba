@@ -1,1 +1,17 @@
-<p>card-comic works!</p>
+<div class="comic">
+  <img [src]="comic.images[0]" alt="deadpool">
+  <div class="heading"> {{comic.title}}</div>
+  <p>{{comic.description}}</p>
+  <div>
+    <button class="button" (click)="showDetail()">
+      <div class="front">
+        <span>Detalle</span>
+      </div>
+    </button>
+  </div>
+</div>
+
+
+<my-app-marvel-lib-card-comic-detail>
+
+</my-app-marvel-lib-card-comic-detail>
