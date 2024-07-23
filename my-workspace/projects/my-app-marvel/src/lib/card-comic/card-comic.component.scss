@@ -1,0 +1,93 @@
+  /*for displaying as card*/
+  .comic {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px 10px black;
+    margin: 10px;
+    background: linear-gradient(to bottom right, #b71c1c, #d17171);
+  }
+
+  /*heros description*/
+  p {
+    color: black;
+    margin: 8px;
+  }
+  /*styling image*/
+  img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+  }
+  /*heros heading description*/
+  .heading {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+  }
+
+
+
+  button {
+    appearance: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    isolation: isolate;
+  }
+
+  .button {
+    color: #121212;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    display: contents;
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: 4px;
+    position: relative;
+
+    &:focus-visible {
+      outline-color: #1212df;
+    }
+
+    &::before {
+      content: '';
+      z-index: -1;
+      border-radius: inherit;
+      background: #121212;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 200ms ease;
+    }
+
+    &:hover::before {
+      transition: opacity 100ms ease;
+      opacity: 1;
+    }
+    &:active::before {
+      transition: opacity 100ms ease;
+      opacity: 0;
+    }
+
+    & > .front {
+      padding: 12px 96px;
+      border-radius: inherit;
+      background: #ffffff;
+      transition: transform 200ms ease;
+    }
+
+    &:hover > .front {
+      transform: translate(-8px, -8px);
+    }
+    &:active > .front {
+      transition: transform 50ms ease;
+      transform: translate(0px, 0px);
+    }
+  }

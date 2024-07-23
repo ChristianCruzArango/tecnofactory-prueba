@@ -1,0 +1,14 @@
+.header{
+  color: #FAFAFA;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+/*Applying flex property*/
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px;
+}

@@ -1,0 +1,11 @@
+<div class="container-card" *ngIf="ready">
+  <div class="header">MARVEL</div>
+  <div class="cards">
+    <div *ngFor="let comic of comics">
+      <my-app-marvel-lib-card-comic [comic]="comic"></my-app-marvel-lib-card-comic>
+    </div>
+  </div>
+</div>
+
+
+<my-app-marvel-lib-loading *ngIf="!ready"></my-app-marvel-lib-loading>
